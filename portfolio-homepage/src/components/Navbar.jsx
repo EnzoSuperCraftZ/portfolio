@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import "./Navbar.css";
-import logo from "../assets/logo-semFundo-Atlas_layers_cropped.png";
+import logo from "../assets/Z_logo.png";
 
 export function scrollToSection(id) {
   const section = document.getElementById(id);
@@ -40,12 +40,19 @@ export default function Navbar({ onNavigateToRoadmap }) {
       />
 
       <div className="navbar-links">
-        <button className="nav-btn" onClick={() => scrollToSection("Sobre")}>
-          Saiba Mais
+        <button className="nav-item" onClick={() => scrollToSection("Hero")}>
+          <div className="nav-bubble"></div>
+          <span className="nav-label">Home</span>
         </button>
 
-        <button className="nav-btn" onClick={() => scrollToSection("Trilhas")}>
-          Trilhas
+        <button className="nav-item" onClick={() => scrollToSection("SobreMim")}>
+          <div className="nav-bubble"></div>
+          <span className="nav-label">Sobre Mim</span>
+        </button>
+
+        <button className="nav-item">
+          <div className="nav-bubble"></div>
+          <span className="nav-label">Contato</span>
         </button>
       </div>
     </nav>

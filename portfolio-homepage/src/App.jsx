@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from "./components/Navbar";
 import Hero from "./components/hero";
-import Sobre from "./components/sobre";
+
 
 
 function App() {
@@ -10,6 +10,8 @@ function App() {
 
   return (
     <main className='app'>
+
+      <Navbar />
       <section className="hero">
         <Hero />
       </section>

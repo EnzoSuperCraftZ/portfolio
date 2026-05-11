@@ -44,9 +44,15 @@ export default function Hero() {
           <span className="titulo">O</span>
       </div>
 
-      <div className="smallLogo-container">
-        <img className="smallLogo" id="Atlaslogo" src={atlasLogo} alt="Atlas Logo"/>
-        <img className="smallLogo" id="Ecobitslogo" src={ecobitsLogo} alt="EcoBits Logo"/>
+
+      <div className="projects-wrapper">
+        <span className="projects-title">PROJETOS</span>
+        
+        <div className="smallLogo-container">
+          <img className="smallLogo" id="Atlaslogo" src={atlasLogo} alt="Atlas Logo"/>
+          <img className="smallLogo" id="Ecobitslogo" src={ecobitsLogo} alt="EcoBits Logo"/>
+        </div>
+
       </div>
 
 
